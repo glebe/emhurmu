@@ -1,0 +1,27 @@
+1
+
+initial version, app logic
+
+2
+
+added hurma image
+added social links?
+
+3
+
+style updates?
+added TODO?
+
+4 
+
+showing time since one eaten hurma instead of timestamp
+use templates instead of hardcoded html
+added REFS to track useful info
+
+5 
+
+added leaders page (for now, unsorted)
+added logout page
+moving inline js and css into static files
+added this file, version log
+updated using of django 1.1 templates

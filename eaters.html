@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Ем хурму</title>
+	<link type="text/css" rel="stylesheet" href="/static/main.css" />	
+	<script type="text/javascript" src="http://vk.com/js/api/share.js?10" charset="windows-1251"></script>
+	<script type="text/javascript" src="/static/ga.js"></script>
+</head>
+
+<body>
+<div class="log">
+<h1 class="title">Ели хурму:</h1>
+
+  {% for eater in eaters %}
+    {% if eater.author %}
+     <p><b>{{ eater.author.nickname }}</b> ел хурму <span class="date">{{ eater.date|timesince }}</span> назад</p> 
+    {% else %}
+      <p>Кто-то ел хурму <span class="date">{{ eater.date|timesince }}</span> назад</p>
+		{% endif %}
+	{% endfor %}
+<a class="call" href="http://emhurmu.appspot.com">Я тоже хочу!</a>
+</div>
+<div class="hurma">
+	<a href="http://emhurmu.appspot.com"><img src="http://emhurmu.appspot.com/static/hurma.png" border=0></a>
+</div>
+
+<div class="social">
+<table>
+<tr>
+	<td class="element">
+		<a name="fb_share" type="box_count" href="http://www.facebook.com/sharer.php" share_url="http://emhurmu.appspot.com/status">Share</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+	</td>
+	<td class="element">
+		<a href="http://twitter.com/share" class="twitter-share-button" data-text="я съел хурму #hurma" data-count="vertical">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	</td>
+	<td class="element">
+		<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Femhurmu.appspot.com%2Fstatus&amp;layout=box_count&amp;show_faces=true&amp;width=50&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:65px;" allowTransparency="true"></iframe>
+	</td>
+	<td class="element">
+		<script type="text/javascript"><!--
+		document.write(VK.Share.button('http://emhurmu.appspot.com/status',{type: "round", text: "Share"}));
+		--></script>
+	</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+body { font-family: sans-serif; font-size: 13px; }
+h2, h3 { color: #63554a }
+div.content{ position: absolute; top: 30%; left: 40% }
+
+.title {color:#f87723}
+a.call {color:#9c3521;font-size: 20px;font-weight:bold;line-height:60px;}
+div.log	{margin-left:100px;margin-top:100px}
+div.log span.date {color:#63554a; font-size: 15px}
+div.log b { color: gray; font-size: 25px; font-weight: normal; }
+
+div.hurma	{position:absolute;bottom:50px;right:50px}
+div.social	{position:absolute;top:100px;right:50px;text-align:right;}
+div.social .element {padding:2px}

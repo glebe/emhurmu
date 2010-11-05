@@ -1,0 +1,17 @@
+<html>
+	<head>
+	  <title>Емхурму</title>
+    <link type="text/css" rel="stylesheet" href="/static/main.css" />	
+	  <script type="text/javascript" src="/static/ga.js"></script>	
+	</head>
+	<body>
+		<div class="content">
+			<img src="http://emhurmu.appspot.com/static/hurma.png">
+      <h2>Привет, {{ user.nickname }}!</h2>
+      <h3>Ты ешь хурму прямо сейчас?</h3>
+      <form action="/eat" method="post">
+        <div><input type="submit" value="Да!"> <input type="button" value="Нет :(" onclick='location.href="/status"'></div>
+      </form>
+		</div>
+	</body>
+</html>
