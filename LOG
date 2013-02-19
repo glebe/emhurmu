@@ -25,3 +25,8 @@ added logout page
 moving inline js and css into static files
 added this file, version log
 updated using of django 1.1 templates
+
+6
+
+19/02/2013
+changed url from emhurmu.appspot.com to emhurmu.ru
